@@ -20,6 +20,7 @@ kotlin {
         publishAllLibraryVariants()
     }
     ios()
+    js()
 
     sourceSets {
         commonMain {
@@ -51,6 +52,17 @@ kotlin {
 
         val iosMain by sourceSets.getting {
 
+        }
+        val jsMain by sourceSets.getting {
+            dependencies {
+                implementation(kotlin("stdlib-js"))
+            }
+        }
+
+        val jsTest by sourceSets.getting {
+            dependencies {
+                implementation(kotlin("test-js"))
+            }
         }
     }
     cocoapodsext {
