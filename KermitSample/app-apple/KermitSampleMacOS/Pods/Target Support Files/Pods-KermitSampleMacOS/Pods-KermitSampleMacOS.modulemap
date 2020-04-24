@@ -1,0 +1,6 @@
+framework module Pods_KermitSampleMacOS {
+  umbrella header "Pods-KermitSampleMacOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

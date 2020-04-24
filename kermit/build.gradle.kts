@@ -19,6 +19,7 @@ kotlin {
         publishAllLibraryVariants()
     }
     ios()
+    macosX64("macos")
 
     sourceSets {
         commonMain {
@@ -50,6 +51,11 @@ kotlin {
 
         val iosMain by sourceSets.getting {
 
+        }
+        val macosMain by sourceSets.getting {
+            
+        }
+        macosTest {
         }
     }
 }

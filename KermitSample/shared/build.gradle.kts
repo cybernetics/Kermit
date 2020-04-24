@@ -15,6 +15,7 @@ kotlin {
     version = "0.0.1"
     android()
     ios()
+    macosX64()
 
     sourceSets {
         commonMain {
